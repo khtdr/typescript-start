@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "name": "spicerack-prototype",
+  "scripts": {
+    "tailwind": "tailwind build tailwind/style.css -c tailwind/config.js -o src/style.css",
+    "tailwind-watch": "nodemon -w tailwind.css -w tailwind.config.js -x 'yarn run tailwind'",
+    "react": "yarn run tailwind-watch & nwb react run src --install"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.15",
+    "awesome-typescript-loader": "^5.2.1",
+    "tailwindcss": "^0.7.3",
+    "typescript": "^3.4.5"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-zondicons": "^1.1.9"
+  }
+}
